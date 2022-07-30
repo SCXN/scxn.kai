@@ -1,0 +1,12 @@
+extends layout
+block content
+  div#navCont
+    main.w80.superCenterer.pb-4
+      section.superCenterer.w100
+        div.w100(style='display: flex; align-items: center; justify-content: space-between;border:1px solid white; border-radius: 3px; padding: 1em; color: white;')
+          h4.w100 Error— #{error.status}:
+          h1.w100=message
+        
+        h3.py-3
+          a(href='/' style='color: white;') ←Return home
+        code(style='max-width: 900px; color: white; border:1px solid white; border-radius: 3px; padding: 1em;') #{error.stack}

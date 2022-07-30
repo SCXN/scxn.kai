@@ -1,0 +1,39 @@
+section#exhibit.exhibit
+    article.container-fluid
+        div.row.exhibitCardsRow
+            item.col-12.pb-3
+                small.small
+                    h4.textAlignR 
+                        span.outlineBubble Last updated: #{keysDate}
+            item.col-lg-12.exhibitTitleCase
+                h1.exhibitTitle The Web Solu&shy;tion 
+                h4.exhibitSub Today's natural, elegant and modern approach to web publishing.
+        div.row.exhibitCardsRow.gx-0
+            margin.margin.col-lg-1.superCenterer.d-none.d-xl-block.bullNosed
+                img(src='https://images.unsplash.com/photo-1488190211105-8b0e65b80b4e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80').flash.bw.bullNosed
+            item.card.col-lg-3.exhibitCards
+                img(src='https://images.unsplash.com/photo-1481833761820-0509d3217039?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80').card-img-top
+                h3.card-title.exhibitCardsTitle Food Indu&shy;stry Pros
+                p.card-text.exhibitCardsText 'Food and beverage' is a fast-paced, community-minded industry that indulges the senses.  Flirtacious, splashy and creative.
+                p.card-text.exhibitCardsText
+                    button(type='button').button.w100.bottomZ(onclick='location.href="#exhibitMore";' value="Go to The Three Key Factors") More
+            item.card.col-lg-3.exhibitCards
+                img(src='https://images.unsplash.com/photo-1602526432604-029a709e131c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80').card-img-top
+                h3.card-title.exhibitCardsTitle Techies & Hobb&shy;yists
+                p.card-text.exhibitCardsText Command readers' attention with a decisive focal point and attention-grabbing, highly shareable information.
+                p.card-text.exhibitCardsText
+                    button(type='button').button.w100.bottomZ(onclick='location.href="#exhibitMore";' value="Go to The Three Key Factors") More
+            item.card.col-lg-3.exhibitCards
+                img(src='https://images.unsplash.com/photo-1506806732259-39c2d0268443?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1472&q=80').card-img-top
+                h3.card-title.exhibitCardsTitle Artis&shy;ans & Craf&shy;ters
+                p.card-text.exhibitCardsText The moment you snap a photo and post something you've created to your social media, boom! It's already on your homepage!
+                p.card-text.exhibitCardsText
+                    button(type='button').button.w100.bottomZ(onclick='location.href="#exhibitMore";' value="Go to The Three Key Factors") More
+            margin.margin.col-lg-1.superCenterer.d-none.d-xl-block.bullNosed
+                img(src='https://images.unsplash.com/photo-1507207611509-ec012433ff52?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80').flash.bw.bullNosed
+            include laurel
+a#exhibitMore
+section#exhibit.exhibit
+    article.container-fluid
+        div.row.exhibitMoreRow.pb-5
+            !=keysPost

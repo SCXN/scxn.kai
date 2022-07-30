@@ -1,0 +1,139 @@
+@media screen and (min-width: 480px){
+  .outlineBubble{
+    border: 1px solid  var(--c6);
+    border-left-color: rgb(129, 177, 177);
+    border-bottom-color: rgb(129, 177, 177);
+    padding: 1.23em 1.8em;
+    border-radius: 2px;
+  }
+  .small>*{
+    border-bottom: none;
+  }
+}
+@media screen and (min-width: 600px){
+  .small>*{
+    letter-spacing: .234em;
+  }
+  item.laurel{
+    transform: scale(100%);
+    transition: .234s;
+    max-width: 700px;
+  }
+  img.laurel{
+  height: 180%;
+  }
+  .laurel.left{
+    top:-69px;
+    left: -99px; 
+  }
+  .laurel.right{
+    top: -69px;
+    right: -99px;
+  }
+    body.show-nav{
+        /*width of nav*/
+        transform: translateX(200px);
+        margin-right: 200px;
+    }
+        h1.title{
+          font-size: 56pt;
+        }
+    nav{
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        width: 200px;
+        height: 100%;
+        z-index: 100;
+        transform: translateX(-100%);
+        overflow-y: unset;
+        }
+    div.meatAndPotatoes {
+        column-count: 1;
+      }
+      .toggle.moved{
+        position: sticky;
+        }   
+        section{
+            padding-top: 7vw;
+        }       
+}
+@media screen and (min-width: 768px){
+  .switchyText{
+    width: 100%;
+    text-align: right;
+   }
+}
+@media screen and (min-width: 900px){
+  @keyframes bodyBGbreather {
+    0% {background-size:130%;}
+    50% {background-size: 270%;}
+    100%{background-size: 130%;}
+  }
+    div.meatAndPotatoes {
+        column-count: 2;
+      }
+      section{
+            padding-top: 5vw;
+        }
+        h2.subTitle{
+            padding: 0;
+          }
+          .exhibitCardsRow>*{
+            position: unset;
+          }
+          .exhibitCardsRow>.margin{
+            position: unset;
+          height: 60vh;
+          min-height: 300px;
+          max-height:700px;
+          }
+}
+@media screen and (min-width: 1200px){
+  .redLined{
+    border-right: 1px solid var(--c3);
+  }
+}
+@media screen and (min-width: 1700px){
+    div.meatAndPotatoes {
+        column-count: 3;
+      }
+      section{
+        padding-top: 3vw;
+    }
+}
+@media screen and (max-height: 450px){
+    .socialsSmalled{
+        width: 25%;
+        height: auto;
+      }
+      .shrinkText{
+        font-size: 9pt;
+        padding: 6px 20px;
+      }
+}
+  @media screen and (max-height: 500px){
+    .glamatarded{
+    display: block;
+    }
+  }
+@media screen and (max-height: 639px){
+    .smallBye{
+      transition: .45s;
+      opacity: 0%;
+    }
+
+  }
+@media screen and (max-width:991px){
+#ohBiggie{
+  height:400px;
+}
+#ohBiggie2{
+  height:400px;
+}
+.bgFlash1,
+.bgFlash2{
+  min-height: 27vh;
+}
+}

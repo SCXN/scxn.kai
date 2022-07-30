@@ -1,0 +1,57 @@
+extends layout
+block content
+  div#navCont
+    nav
+      div.avatar
+        img(src='https://media-s3-us-east-1.ceros.com/gumgum/images/2018/12/10/1edb47ec0925be150668a3925e114db6/90s-lord.gif?imageOpt=1&fit=bounds&width=543')
+      ul
+        div#glamatar.glamatar
+          img(src='https://media-s3-us-east-1.ceros.com/gumgum/images/2018/12/10/1edb47ec0925be150668a3925e114db6/90s-lord.gif?imageOpt=1&fit=bounds&width=543')
+        span.navCase.f9 
+          a(href='mailto:scxn.kai@pm.me').clean scxn.kai@pm.me<br>
+          a(href='tel:+13604779563').clean (360) 477-9563 x10
+        include navLinks
+        span#description.description=description
+        span.description
+          button(type='button').button.w100(onclick='location.href="#more";' value="Go to The Web Solution") More
+        div.socialsSideCase
+          include socials
+        div.socialsSideCase
+          include horizontalNav
+          a(href='https://scxn.herokuapp.com/')
+            div.smallBye.pl-0.m-0.superCenterer.pt-2
+              small.p-0.m-0.logoify.me.flush.center.clean SC
+                span.logoify.special.me X
+                | N
+  include modal
+  button#toggle.toggle
+      i#theToggle.fa.fa-bars.fa-2x
+  div#goToTop2.goToTop2.superCenterer    
+    a(href='#top') 
+        button#toTopperCase2.toggle
+            i#toTopper2.fa.fa-arrow-up.fa-2x
+  main.main
+    header.cover
+        article
+          include header
+    include horizontalNav
+    section#recently
+      article
+        div.item
+          include articles/coverStory
+  main#services.pb-5 
+    include services_
+  main#more.main 
+    section#solution
+      article
+        div.item  
+          include articles/solution
+    include exhibit
+  main#social 
+    include social
+  main#about.main 
+    include about
+    include footer
+  script(src='http://code.jquery.com/jquery-latest.min.js')
+  script(src='/javascripts/emailer.js')
+  script(src='/javascripts/script.js')
