@@ -30,14 +30,6 @@ function stickyFix(){
         $(".socials").removeClass('socialsSmalled');
     }
 }
-/*.scroll deprecated but snappier than .on ...
-...Catch browsers that use superior .scroll*/
-$(document).scroll(function(){
-    stickyFix();
-});
-
-/*for browsers that've dropped .scroll ...
-...working out latency issue on 'else'*/
 $(document).on('wheel',function(){
     stickyFix();
 });
