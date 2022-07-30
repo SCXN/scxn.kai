@@ -17,7 +17,7 @@ toggle.addEventListener('click', () =>{
 );
 
 //Move toggle down on scroll
-$(document).scroll(function(){
+function stickyFix(){
     if($(document).scrollTop()>"50"){
         $(".description").addClass('shrink');
         $("#toggle").addClass('moved');
@@ -29,4 +29,15 @@ $(document).scroll(function(){
         $(".links").removeClass('shrinkText');
         $(".socials").removeClass('socialsSmalled');
     }
+}
+/*.scroll deprecated but snappier than .on ...
+...Catch browsers that use superior .scroll*/
+$(document).scroll(function(){
+    stickyFix();
+});
+
+/*for browsers that've dropped .scroll ...
+...working out latency issue on 'else'*/
+$(document).on('wheel',function(){
+    stickyFix();
 });
