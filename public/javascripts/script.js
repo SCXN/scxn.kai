@@ -18,7 +18,7 @@ toggle.addEventListener('click', () =>{
 
 //Move toggle down on scroll
 function stickyFix(){
-    if($(document).scrollTop()>"50"){
+    if($(document).scrollTop()>72){
         $(".description").addClass('shrink');
         $("#toggle").addClass('moved');
         $(".links").addClass('shrinkText');
@@ -30,6 +30,6 @@ function stickyFix(){
         $(".socials").removeClass('socialsSmalled');
     }
 }
-$(document).on('wheel',function(){
+$(document).on('scroll',function(){
     stickyFix();
 });
